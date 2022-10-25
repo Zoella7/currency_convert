@@ -1,21 +1,17 @@
 import React from 'react';
 
-const CurrencyComponent = ({allcurrency}) => {
+const CurrencyComponent = ({allCurrency, defaultValue,onChangeValue,amountValue,onChangeAmount}) => {
 
-    const {ccy,base_ccy} = allcurrency
+    // const {ccy, base_ccy} = allCurrency
 
     return (
         <div>
-            <input type="number"/>
-            <select>
-                {allcurrency.map(value=><option value={value.ccy}>{value.ccy}</option>)}
+            <input type="number" value={amountValue} onChange={onChangeAmount}/>
+            <select value={defaultValue} onChange={onChangeValue}>
+                {allCurrency.map((value,index) => <option key={index} value={value}>{value}</option>)}
             </select>
-
-            <input type="number"/>
-            <select>
-                {allcurrency.map(value=><option value={value.base_ccy}>{value.base_ccy}</option>)}
-            </select>
-                    </div>
+            
+        </div>
     );
 };
 

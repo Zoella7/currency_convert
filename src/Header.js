@@ -3,7 +3,7 @@ import React from 'react';
 
 
 const Header = ({allcurrency}) => {
-const {ccy,base_ccy,buy,sale}=allcurrency
+// const {ccy,base_ccy,buy,sale}=allcurrency
 
 
     return (
