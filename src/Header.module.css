@@ -1,0 +1,6 @@
+.ratesWrap{
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+

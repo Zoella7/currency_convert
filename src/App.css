@@ -1,17 +1,29 @@
-body{
+body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    background: rgb(112, 102, 102);
+    background: radial-gradient(circle, rgba(112, 102, 102, 1) 33%, rgba(5, 10, 17, 1) 100%);
+    padding: 18px;
 }
-.input{
-    width: 300px;
-    height: 100px;
+
+input[type="number"] {
+    width: 400px;
+    height: 20px;
+    background: grey;
+    margin: 5px;
+}
+
+select {
+    width: 100px;
+    height: 25px;
+    background: grey;
+    margin: 5px;
+}
+
+.mainWrap {
     border: 1px solid black;
-}
-.select{
-
-
 }

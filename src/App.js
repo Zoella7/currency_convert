@@ -1,6 +1,6 @@
 import {Header} from "./Header";
 import {CurrencyComponent} from "./CurrencyComponent";
-import "./App.css"
+import css from "./App.css"
 import {useEffect, useState} from "react";
 
 const baseURL = 'https://api.exchangerate.host/latest?base=uah'
@@ -58,7 +58,7 @@ function App() {
 
     return (
         <div>
-            <Header/>
+            <Header allcurrency={allCurrency}/>
             <CurrencyComponent
                 allCurrency={allCurrency}
                 defaultValue={firstCurrency}

@@ -1,12 +1,13 @@
 import React from 'react';
+import css from "./App.css"
 
 const CurrencyComponent = ({allCurrency, defaultValue,onChangeValue,amountValue,onChangeAmount}) => {
 
-    // const {ccy, base_ccy} = allCurrency
 
     return (
-        <div>
-            <input type="number" value={amountValue} onChange={onChangeAmount}/>
+        <div className={css.mainWrap}>
+
+            <input  className={css.inputWrap} type="number" value={amountValue} onChange={onChangeAmount}/>
             <select value={defaultValue} onChange={onChangeValue}>
                 {allCurrency.map((value,index) => <option key={index} value={value}>{value}</option>)}
             </select>
