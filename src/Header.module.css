@@ -2,5 +2,9 @@
     display: inline-block;
     flex-wrap: wrap;
     margin: 5px;
+    border:1px solid black;
+    color: lightgray;
 }
+
+
 

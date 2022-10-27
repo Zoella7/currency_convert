@@ -3,15 +3,18 @@ import css from "./Header.module.css"
 
 
 const Header = ({allcurrency}) => {
-const rates = allcurrency
-console.log(allcurrency);
+    const rates = allcurrency
+    console.log(allcurrency);
 
 
     return (
-        <div className={css.mainWrap}>
-            <h1>Currency convert</h1>
-            <h3>All possible currency :</h3>
-            {rates.map(rate=><div className={css.ratesWrap}>{rate}</div>)}
+
+        <div>
+
+            <h2>All possible currency :</h2>
+            <hr/>
+            {rates.map(rate => <div className={css.ratesWrap}>{rate}</div>)}
+            <hr/>
         </div>
     );
 };

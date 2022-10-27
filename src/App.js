@@ -1,7 +1,8 @@
 import {Header} from "./Header";
 import {CurrencyComponent} from "./CurrencyComponent";
-import css from "./App.css"
+import "./App.css"
 import {useEffect, useState} from "react";
+
 
 const baseURL = 'https://api.exchangerate.host/latest?base=uah'
 
@@ -48,8 +49,8 @@ function App() {
 
     useEffect(() => {
         fetch(`https://api.exchangerate.host/latest?base=${firstCurrency}&symbols=${secondCurrency}`)
-            .then(res=>res.json())
-            .then(data=>
+            .then(res => res.json())
+            .then(data =>
                 setExchange(data.rates[secondCurrency])
             )
 
@@ -58,6 +59,10 @@ function App() {
 
     return (
         <div>
+
+            <h1>Currency convert</h1>
+
+
             <Header allcurrency={allCurrency}/>
             <CurrencyComponent
                 allCurrency={allCurrency}
